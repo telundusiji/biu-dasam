@@ -87,6 +87,24 @@ public class Array<E> {
     }
 
     /**
+     * 获取最后一个元素
+     *
+     * @return
+     */
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    /**
+     * 获取第一个元素
+     *
+     * @return
+     */
+    public E getFirst() {
+        return get(0);
+    }
+
+    /**
      * 判断指定元素是否存在
      *
      * @param e 指定元素
@@ -216,6 +234,14 @@ public class Array<E> {
      */
     public E removeLast() {
         return remove(size - 1);
+    }
+
+    /**
+     * 移除第一个元素
+     * @return 移除的元素
+     */
+    public E removerFirst(){
+        return remove(0);
     }
 
     /**
